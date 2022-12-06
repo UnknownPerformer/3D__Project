@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
 
-
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
-
 }
-
 .navbar{
   position: fixed;
   left: 0;
@@ -16,7 +13,7 @@
   width: 100%;
   z-index: 10;
   height: .3rem;
-
+  
   .menu{
     max-width: 80rem;
     width: 100%;
@@ -26,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-
+    
     .logo{
       font-size: 2rem;
       font-weight: 1000;
@@ -37,14 +34,10 @@
 
       span{
         font-size: 2rem;
-
         font-weight: bold;
         font-family: inherit;
       }
-
-
     }
-
   }
   .burger{
     height: 5rem;
@@ -76,11 +69,7 @@
       &:before{
         transform: translateY(-9px);
       }
-    }
-
-
-  }
-}
+    }}}
 .logoEnd{
   font-size: 0.8rem;
   padding-top: 5px;
@@ -94,9 +83,7 @@
   position: relative;
   z-index: 10;
   top: 687px;
-
 }
-
 .container{
   min-height: 100vh;
   width: 100%;
@@ -104,7 +91,6 @@
   background-image: linear-gradient(100deg , white, black);
   overflow: hidden;
   transform-style: preserve-3d;
-  //main
   .main{
     position: relative;
     width: 100%;
@@ -163,7 +149,6 @@
     }
   }
 }
-
 .shadow{
   position: absolute;
   width: 100%;
@@ -210,9 +195,6 @@
     list-style: none;
   }
 }
-
-
-
 .position2{
   opacity: 1;
   transform: translateY(-125px);
@@ -244,7 +226,6 @@
     transition: 5s;
   }
 }
-
 .computer{
   max-width: 60px;
   transform: translateX(-650px) translateY(-242px);
@@ -254,13 +235,10 @@
   display: flex;
   cursor: none;
 }
-
-
 .inst {
   max-width: 24px;
   width: 100%;
   margin: 10px auto;
-
   transform: translateY(687px) translateX(-25px);
   height: 24px;
   display: block;
@@ -270,7 +248,6 @@
   max-width: 24px;
   width: 100%;
   margin: 10px auto;
-
   transform: translateY(687px) translateX(-232px);
   height: 24px;
   display: flex;
@@ -281,25 +258,22 @@
   max-width: 24px;
   width: 100%;
   margin: 10px auto;
-
   transform: translateY(687px) translateX(-163px);
   height: 24px;
   display: flex;
   cursor: pointer;
   z-index: 1000000;}
+
 .telegram {
   max-width: 24px;
   width: 100%;
   margin: 10px auto;
-
   transform: translateY(687px) translateX(-95px);
   height: 24px;
   display: flex;
   cursor: pointer;
   opacity: 1;
 }
-
-
 
 .btn1 {
   text-align: center;
@@ -319,15 +293,6 @@
 
   }
 }
-
-
-
-
-
-
-
-
-
 
 .popup{
   position:fixed;
@@ -408,7 +373,6 @@
   justify-content: center;
   padding: 30px 20px;
 }
-
 .popup_content2{
   background-color: darkslategrey;
   color: black;
@@ -431,12 +395,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-
 
 .calc{
   width: 300px;
@@ -490,10 +448,6 @@
 
 
 }
-
-
-
-
 .popup_text2{}
 .popup_area2{
   position: absolute;
@@ -514,8 +468,6 @@
 
   &:hover{
     box-shadow: 0 0 0 rgb(1,1,1, 0.2);
-
-
   }
 }
 .btn2{
@@ -528,23 +480,15 @@
   opacity: 0;
 }
 
-//Calculator
-
-
-
-
 .app {
   padding-top: 5rem;
   display: flex;
   justify-content: center;
 }
-
 .wrap {
   width: 500px;
 }
-
 $height: 46px;
-
 .select {
   transform: translateY(-15px);
   width: 100%;
@@ -553,8 +497,7 @@ $height: 46px;
   color: white;
   background-color: black;
   opacity: 0.5;
-
-
+  
   &.open {
     .select__dropdown {
       display: block;
@@ -572,7 +515,6 @@ $height: 46px;
       display: block;
     }
   }
-
   &__input {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -583,7 +525,6 @@ $height: 46px;
     padding: 0 1rem;
     cursor: pointer;
   }
-
   &__dropdown {
     display: none;
     position: absolute;
@@ -596,13 +537,11 @@ $height: 46px;
     overflow-y: auto;
     box-shadow: 2px 3px 5px rgba(0,0,0,.3);
   }
-
   &__list {
     padding: 0;
     margin: 0;
     list-style: none;
   }
-
   &__backdrop {
     position: fixed;
     display: none;
@@ -623,44 +562,13 @@ $height: 46px;
     &.selected {
       background-color: darkcyan;
     }
-
     &:hover {
       background-color: darkslategrey;
       cursor: pointer;
       transition: .15s background-color ease-in;
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container.active{
   .bar{
     transform: rotate(360deg);
@@ -671,7 +579,6 @@ $height: 46px;
     &:after{
       transform: translateY(0) rotate(-50deg);
     }
-
   }
   .main{
     animation: main-animation 1s ease;
@@ -691,13 +598,10 @@ $height: 46px;
   //  animation: shadow-two .6s ease-out;
   //  transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
   //}
-
   .links a{
     animation: appear 0.5s forwards ease var(--i);
   }
 }
-
-
 @keyframes main-animation {
   from {
     transform: translate(0);
@@ -708,7 +612,6 @@ $height: 46px;
 }
 @keyframes box-animation {
   from{
-
   }
 }
 //@keyframes shadow-one {
